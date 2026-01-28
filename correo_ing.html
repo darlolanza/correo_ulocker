@@ -1,18 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="x-apple-disable-message-reformatting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting" />
     <title>Booking Confirmation - U Locker</title>
     <style type="text/css">
         /* Reset styles for email clients */
-        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
-        table { border-collapse: collapse !important; }
-        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; font-family: Arial, Helvetica, sans-serif; }
-        
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         /* Specific styles to prevent blue links on iOS */
         a[x-apple-data-detectors] {
             color: inherit !important;
@@ -25,30 +56,47 @@
 
         /* Mobile Media Queries */
         @media screen and (max-width: 600px) {
-            .mobile-padding { padding-left: 15px !important; padding-right: 15px !important; }
-            .mobile-font-title { font-size: 24px !important; }
-            .mobile-btn { padding: 15px 20px !important; width: 100% !important; display: block !important; box-sizing: border-box !important; }
+            .mobile-padding {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            .mobile-font-title {
+                font-size: 24px !important;
+            }
+
+            .mobile-btn {
+                padding: 15px 20px !important;
+                width: 100% !important;
+                display: block !important;
+                box-sizing: border-box !important;
+            }
         }
     </style>
 </head>
+
 <body style="margin: 0; padding: 0; background-color: #f4f4f4;">
 
     <!-- Invisible Main Container (Grey Background) -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
         <tr>
             <td bgcolor="#f4f4f4" align="center" style="padding: 20px 0;">
-                
+
                 <!-- Email Container Table (Max 600px) -->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0px 2px 10px rgba(0,0,0,0.1);">
-                    
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="max-width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0px 2px 10px rgba(0,0,0,0.1);">
+
                     <!-- 1. HEADER -->
                     <tr>
                         <td align="center" style="padding: 40px 30px 20px 30px;" class="mobile-padding">
                             <!-- Placeholder Logo -->
-                            <img src="https://placehold.co/150x50/222222/ffffff?text=U+LOCKER" alt="Company Logo" width="150" style="display: block; border: 0; font-family: Arial, sans-serif; color: #333333;" />
-                            
+                            <img src="https://placehold.co/150x50/222222/ffffff?text=U+Locker" alt="Company Logo"
+                                width="150"
+                                style="display: block; border: 0; font-family: Arial, sans-serif; color: #333333;" />
+
                             <!-- Greeting -->
-                            <h2 style="margin: 0; margin-top: 25px; font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: #333333; font-weight: bold;" class="mobile-font-title">
+                            <h2 style="margin: 0; margin-top: 25px; font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: #333333; font-weight: bold;"
+                                class="mobile-font-title">
                                 Hello Sergio!
                             </h2>
                         </td>
@@ -56,11 +104,15 @@
 
                     <!-- 2. STATUS BLOCK -->
                     <tr>
-                        <td align="center" style="padding: 0 30px 30px 30px;" class="mobile-padding">
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <td align="center" class="mobile-padding" style="padding: 0 30px 30px 30px;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #28a745; font-weight: bold;">
-                                        ✅ Payment successful!
+                                    <td align="center"
+                                        style="background-color: #e8f5e9; padding: 10px 20px; border-radius: 20px;">
+                                        <p
+                                            style="font-family: Helvetica, Arial, sans-serif; color: #2e7d32; font-size: 16px; font-weight: bold; margin: 0;">
+                                            ✓ Payment successful!
+                                        </p>
                                     </td>
                                 </tr>
                             </table>
@@ -71,15 +123,18 @@
                     <tr>
                         <td align="center" style="padding: 0 40px 40px 40px;" class="mobile-padding">
                             <!-- Warning -->
-                            <p style="margin: 0 0 25px 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #555555; text-align: center;">
-                                Important: There is <strong style="color: #d9534f;">NO numeric keypad</strong> at the entrance. To enter, use this button:
+                            <p
+                                style="margin: 0 0 25px 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #555555; text-align: center;">
+                                Important: There is <strong style="color: #d9534f;">NO numeric keypad</strong> at the
+                                entrance. To enter, use this button:
                             </p>
 
                             <!-- GREEN BUTTON (Bulletproof Button for Outlook) -->
-                            <table border="0" cellspacing="0" cellpadding="0">
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td align="center" bgcolor="#28a745" style="border-radius: 8px;">
-                                        <a href="#" target="_blank" class="mobile-btn" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: #ffffff; text-decoration: none; padding: 16px 40px; border: 1px solid #28a745; display: inline-block; font-weight: bold; border-radius: 8px; white-space: nowrap;">
+                                        <a href="#" target="_blank" class="mobile-btn"
+                                            style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: #ffffff; text-decoration: none; padding: 16px 40px; border: 1px solid #28a745; display: inline-block; font-weight: bold; border-radius: 8px; white-space: nowrap;">
                                             🔓 OPEN ACCESS DOOR
                                         </a>
                                     </td>
@@ -87,7 +142,8 @@
                             </table>
 
                             <!-- Small text -->
-                            <p style="margin: 15px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #999999; text-align: center;">
+                            <p
+                                style="margin: 15px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #999999; text-align: center;">
                                 You can enter from 10 minutes before your reservation.
                             </p>
                         </td>
@@ -96,9 +152,10 @@
                     <!-- 4. SEPARATOR -->
                     <tr>
                         <td style="padding: 0;">
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td style="border-bottom: 1px solid #eeeeee; font-size: 0; line-height: 0;">&nbsp;</td>
+                                    <td style="border-bottom: 1px solid #eeeeee; font-size: 0; line-height: 0;">&nbsp;
+                                    </td>
                                 </tr>
                             </table>
                         </td>
@@ -108,32 +165,38 @@
                     <tr>
                         <td bgcolor="#f8f9fa" align="center" style="padding: 40px 30px;" class="mobile-padding">
                             <!-- Instruction -->
-                            <p style="margin: 0 0 20px 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #333333; text-align: center;">
+                            <p
+                                style="margin: 0 0 20px 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #333333; text-align: center;">
                                 Once inside, go to the terminal screen and enter this code:
                             </p>
 
                             <!-- CODE BOX (Non-Clickable Design) -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="220" style="width: 220px;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="220"
+                                style="width: 220px;">
                                 <tr>
-                                    <td align="center" bgcolor="#ffffff" style="border: 2px dashed #cccccc; border-radius: 6px; padding: 20px;">
-                                        <span style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #777777; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">
+                                    <td align="center" bgcolor="#ffffff"
+                                        style="border: 2px dashed #cccccc; border-radius: 6px; padding: 20px;">
+                                        <span
+                                            style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #777777; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">
                                             LOCKER CODE:
                                         </span>
-                                        <span style="display: block; font-family: 'Courier New', Courier, monospace; font-size: 32px; color: #333333; font-weight: bold; letter-spacing: 4px;">
+                                        <span
+                                            style="display: block; font-family: 'Courier New', Courier, monospace; font-size: 32px; color: #333333; font-weight: bold; letter-spacing: 4px;">
                                             #4829
                                         </span>
                                     </td>
                                 </tr>
                             </table>
-                            
+
                         </td>
                     </tr>
 
                     <!-- SIMPLE FOOTER -->
                     <tr>
                         <td bgcolor="#333333" align="center" style="padding: 20px;">
-                            <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff;">
-                                © 2024 U Locker Company. All rights reserved.
+                            <p
+                                style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff;">
+                                © 2026 U Locker. All rights reserved.
                             </p>
                         </td>
                     </tr>
@@ -142,7 +205,7 @@
                 <!-- End Container Table -->
 
                 <!-- Invisible final space -->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
                         <td height="40" style="font-size: 0; line-height: 0;">&nbsp;</td>
                     </tr>
@@ -154,4 +217,5 @@
     <!-- End Main Container -->
 
 </body>
+
 </html>
