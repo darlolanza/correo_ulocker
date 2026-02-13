@@ -72,6 +72,26 @@
                 box-sizing: border-box !important;
             }
         }
+
+        /* Heartbeat Animation */
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pulse {
+            animation: heartbeat 1.5s ease-in-out infinite;
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -89,9 +109,8 @@
                     <!-- 1. HEADER -->
                     <tr>
                         <td align="center" style="padding: 40px 30px 20px 30px;" class="mobile-padding">
-                            <!-- Placeholder Logo -->
-                            <img src="https://placehold.co/150x50/222222/ffffff?text=U+Locker" alt="Company Logo"
-                                width="150"
+                            <!-- Logo -->
+                            <img src="ulocker_logo.png" alt="U Locker" width="150"
                                 style="display: block; border: 0; font-family: Arial, sans-serif; color: #333333;" />
 
                             <!-- Greeting -->
@@ -122,18 +141,21 @@
                     <!-- 3. MAIN BLOCK (STREET DOOR) -->
                     <tr>
                         <td align="center" style="padding: 0 40px 40px 40px;" class="mobile-padding">
-                            <!-- Warning -->
+                            <!-- Warning + Arrow -->
                             <p
-                                style="margin: 0 0 25px 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #555555; text-align: center;">
+                                style="margin: 0 0 5px 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #555555; text-align: center;">
                                 <strong>To enter, use this button:</strong>
                             </p>
+                            <p style="margin: 0 0 20px 0; text-align: center; font-size: 40px; color: #28a745;">
+                                &#11015;
+                            </p>
 
-                            <!-- GREEN BUTTON (Bulletproof Button for Outlook) -->
+                            <!-- 3D GREEN BUTTON (Bulletproof Button for Outlook) -->
                             <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <td align="center" bgcolor="#28a745" style="border-radius: 8px;">
-                                        <a href="#" target="_blank" class="mobile-btn"
-                                            style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: #ffffff; text-decoration: none; padding: 16px 40px; border: 1px solid #28a745; display: inline-block; font-weight: bold; border-radius: 8px; white-space: nowrap;">
+                                    <td align="center" style="border-radius: 8px;">
+                                        <a href="#" target="_blank" class="mobile-btn pulse"
+                                            style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: #ffffff; text-decoration: none; padding: 16px 40px; background-color: #28a745; border-bottom: 5px solid #1e7e34; display: inline-block; font-weight: bold; border-radius: 8px; white-space: nowrap; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                                             🔓 OPEN ACCESS DOOR
                                         </a>
                                     </td>
